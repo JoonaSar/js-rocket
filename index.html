@@ -4,38 +4,20 @@
 	<title>javascriptii</title>
 	
 <script type="text/javascript" src="js/script.js">
-	var car = {
-	make: 'Audi',
-	type: 'A8',
-	color: 'Blue',
-	isTurnedOn: false,
-	numberOfWheels: 4,
-	seats: [
-	'seat 1', 
-	'seat 2', 
-	'seat 3'
-	],
-	turnOn: function () {
-		this.isTurnedOn = true;
-		alert( car.isTurnedOn);
-	},
-	fly: function () {
-		alert('lennä nykäsen matti, lennä');
-	},
-	switchCar: function (isOn) {
-	if (isOn== true) {
-		this.isTurnedOn = true;
-		}
-	else {
-		this.isTurnedOn = false;
-		}
-	
-	}
-	};
 </script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <h1> Hello js rocket </h1>
+<p><a href="#" onclick="car.isCarOn();" >Is car turned on?</a></p>
+<p> <a href="#" onclick="car.switchCar(true);">Laita auto päälle</a> </p>
+<p> <a href="#" onclick="car.switchCar(false);">Laita auto pois päältä</a> </p>
+<p> <a href="#" onclick="doCoolStuff();">Siistii</a> </p>
+
+	<div class= "cool" id="cool">
+	<p>Hello I'm cool</p>
+	</div>
+
 </body>
 </html>
 
