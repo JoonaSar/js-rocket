@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascriptii</title>
+	
+<script type="text/javascript" src="js/script.js">
+	var car = {
+	make: 'Audi',
+	type: 'A8',
+	color: 'Blue',
+	isTurnedOn: false,
+	numberOfWheels: 4,
+	seats: [
+	'seat 1', 
+	'seat 2', 
+	'seat 3'
+	],
+	turnOn: function () {
+		this.isTurnedOn = true;
+		alert( car.isTurnedOn);
+	},
+	fly: function () {
+		alert('lennä nykäsen matti, lennä');
+	},
+	switchCar: function (isOn) {
+	if (isOn== true) {
+		this.isTurnedOn = true;
+		}
+	else {
+		this.isTurnedOn = false;
+		}
+	
+	}
+	};
+</script>
+</head>
+<body>
+<h1> Hello js rocket </h1>
+</body>
+</html>
+
