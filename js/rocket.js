@@ -6,11 +6,11 @@ var changeState = function (state) {
 	innerHTML = countdownNumber;
 	if (state == 2)
 		timer = setInterval(function() {
-			
+		countdownNumber = countdownNumber - 1;
 		
 		document.getElementById('countdown').
 			innerHTML = countdownNumber;
-			countdownNumber = countdownNumber - 1;
+			
 			if (countdownNumber <= -1) {
 				
 				changeState(3);
@@ -26,7 +26,7 @@ var changeState = function (state) {
 		else {
 			changeState(5);
 		}
-		}, 2000);
+		}, 3000);
 	}
 	}
 	

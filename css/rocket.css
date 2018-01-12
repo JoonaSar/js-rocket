@@ -15,8 +15,43 @@
 	top: 0;
 	right: 0;
 }
-a.button{
+.nappi{
+	position: absolute;
+	left: 25%;
+	width: 50%;
+	background-color: red;
+	border-style: solid;
+	border-width: 4px;
+	border-color: grey;
+	text-align: center;
+	height:40px;
+	top: 25%;
 	
+}
+.info{
+	position: absolute;
+	width: 100%;
+	left:0;
+	background-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-color: grey;
+	text-align: center;
+	height:15%;
+	
+}
+a.button{
+	font-size: 200%;
+	color: white;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color:#20C20E;
+	font-family: monospace;
+	font-size: 2.5em;
 }
 
 .rocket.flying {
@@ -32,6 +67,8 @@ a.button{
 	height: 100px;
 	background-color: red;
 	transition: bottom 10000ms;
+	
+	
 }
 
 .ground {
@@ -50,6 +87,14 @@ a.button{
 .state5{
 	display: none;
 	
+}
+body.body-state1 .rocket{
+	transition: none;
+}
+
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+	bottom: 1000px;
 }
 
 body.body-state1 .state1{display: block;}
